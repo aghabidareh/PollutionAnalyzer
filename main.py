@@ -21,4 +21,7 @@ df['CO AQI'] = df['CO AQI'].fillna(df['CO AQI'].median())
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-
+states = df['State'].unique()
+cities = df['City'].unique()
+years = df['Year'].dropna().unique().astype(int)
+pollutants = ['NO2', 'O3', 'SO2', 'CO']

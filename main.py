@@ -19,6 +19,6 @@ for col in ['NO2 Mean', 'O3 Mean', 'SO2 Mean', 'CO Mean', 'NO2 1st Max Value', '
 df['SO2 AQI'] = df['SO2 AQI'].fillna(df['SO2 AQI'].median())
 df['CO AQI'] = df['CO AQI'].fillna(df['CO AQI'].median())
 
-app = Dash(__name__, external_stylesheets=['https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'])
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 

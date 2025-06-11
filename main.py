@@ -270,3 +270,6 @@ def update_graphs(states, cities, years, pollutant):
 
     return figures
 
+
+if __name__ == '__main__':
+    app.run(debug=True)
